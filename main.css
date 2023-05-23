@@ -1,0 +1,203 @@
+* { /* для всіх елементів сторінки */
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+.nav { /* редагування розміщення heading */
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 124px;
+}
+
+h1, h2 { /* відсутність відступів у заголовків за замовчуванням */
+    padding: 0;
+    margin: 0;
+}
+
+ul, li { /* розташування списків */
+    display: flex;
+    align-items: center;
+}
+
+.container { /* задання початкової ширини контейнера */
+    width: 1612px;
+    margin: 0 auto; /* позиціонування по центру */
+}
+
+.header { /* редагування вигляду header */
+    background: url('../falkovskyi/img/main_ph.jpg') center no-repeat; /* встановлення зображення */
+    background-size: cover; 
+    height: 100vh; 
+}
+
+.header a { /* встановлення стилю */
+    color: white;
+}
+
+.header_title a { /* встановлення стилю для логотипа */
+    font-size: 70px;  
+    letter-spacing: 7px;
+}
+
+.menu { /* редагування вигляду головної панелі */
+    margin-top: 35px;
+    display: flex; /* розташування на одному рівні */
+    justify-content: space-between; /* відстань між */
+}
+
+.menu a { /* редагування вигляду тегів */
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.btn { /* програмування кнопки */
+    padding: 18px;
+    border: 2px solid white;
+    font-size: 30px;
+    line-height: px;
+}
+
+.btn:hover { /* зміна вигляду кнопки при наведенні, псевдоклас */
+    background-color: white;
+    color: black;
+    transition: .4s ease;
+}
+
+.aboutme { /* редагування вигляду блоку */
+    padding-top: 10vh;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 10vh;
+}
+
+.aboutme h1 { /* редагування вигляду заголовка */
+    font-size: 65px; 
+    letter-spacing: 7px; 
+    line-height: 2em;
+}
+
+.aboutme h3 { /* редагування вигляду тексту */
+    font-size: 25px; 
+    text-align: justify;
+    line-height: 2em;
+}
+
+.contactinfo { /* редагування вигляду блоку */
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 10vh;
+}
+
+.contactinfo h1 { /* редагування вигляду заголовка */
+    font-size: 65px; 
+    letter-spacing: 7px; 
+    line-height: 2em;
+}
+
+.contactinfo h3 { /* редагування вигляду тексту */
+    font-size: 25px; 
+    line-height: 2em;
+}
+
+.contactinfo a { /* редагування вигляду тегу */
+    font-size: 25px; 
+    color:black;
+}
+
+.contactme {
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 10vh;
+}
+
+.contactme h1 {
+    font-size: 65px; 
+    line-height: 2em;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(190, 190, 190);
+    color: black;
+    transition: .4s ease;
+}
+
+.footer { /* створення вигляду footer */
+    background-color: black;
+    height: 184px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding-top: 80px;
+}
+
+
+
+.myworks {
+    padding-top: 10vh;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.myworks h1 {
+    font-size: 65px; 
+    letter-spacing: 7px; 
+    line-height: 2em;
+}
+
+.dropdown {
+    margin-top: 20px;
+    display: flex;
+}
+
+.dropdown select {
+    padding: 18px;
+    border: 2px solid black;
+    font-size: 30px;
+    line-height: px;
+}

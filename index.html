@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falkovskyi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        html {
+            scroll-behavior: smooth; /* повільно переходити з елемента на елемент */
+        }
+    </style>
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="container">
+            <div class="nav">
+                <h1 class="header_title">
+                    <a href="#">
+                        FALKOVSKYI
+                    </a>
+                </h1>
+                <nav class="menu">
+                    <a href="#contactme" class="btn">
+                        Залишити заявку
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="#contactinfo">
+                                Контакти
+                            </a>
+                        <li> <a> | </a> </li>
+                            <a href="#aboutme">
+                                Інформація
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="myworks" class="myworks">
+        <div class="container">
+            <h1>My Works</h1>
+            <div class="dropdown">
+                <select>
+                    <option value="all">Всі</option>
+                    <option value="children">Дитячі</option>
+                    <option value="portraits">Портрети</option>
+                    <option value="landscapes">Пейзажі</option>
+                    <option value="family">Сімейні</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <section id="aboutme" class="aboutme">
+        <div class="container">
+            <h1>About Me</h1>
+            <h3>Supported neglected met she therefore unwilling discovery remainder. Way sentiments two indulgence uncommonly own. Diminution to frequently sentiments he connection continuing indulgence. An my exquisite conveying up defective. Shameless see the tolerably how continued. She enable men twenty elinor points appear. Whose merry ten yet was men seven ought balls.Smile spoke total few great had never their too. Amongst moments do in arrived at my replied. Fat weddings servants but man believed prospect. Companions understood is as especially pianoforte connection introduced.</h3>
+        </div>
+    </section>
+
+    <section id="contactinfo" class="contactinfo">
+        <div class="container">
+            <h1>Contact info</h1>
+            <h3>
+                Тарас Фалковський
+            </h3>
+            <h3>
+                <a href="tel:+380973149387">
+                    +380973149234
+                </a>
+            </h3>
+            <h3>
+                <a href="mailto:taras@gmail.com">
+                    taras@gmail.com                    
+                </a>
+            </h3>
+            <h3>
+                м. Золочів, Львівська обл., Україна
+            </h3>
+        </div>
+    </section>
+
+    <section id="contactme" class="contactme">
+        <div class="container">
+            <h1>Зв'яжіться з нами</h1>
+
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="phone">Номер телефону:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Емейл:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Повідомлення:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Надіслати</button>
+            </form>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <span>Copyright © 2023 | Falkovskyi Taras</span>
+        </div>
+    </footer>
+</body>
+</html>
