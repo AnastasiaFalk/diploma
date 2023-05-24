@@ -176,14 +176,6 @@ button[type="submit"]:hover {
     padding-top: 80px;
 }
 
-
-
-.myworks {
-    padding-top: 10vh;
-    flex-direction: column;
-    justify-content: end;
-}
-
 .myworks h1 {
     font-size: 65px; 
     letter-spacing: 7px; 
@@ -193,11 +185,60 @@ button[type="submit"]:hover {
 .dropdown {
     margin-top: 20px;
     display: flex;
+    height: 70px; 
 }
 
 .dropdown select {
-    padding: 18px;
+    padding: 10px;
     border: 2px solid black;
-    font-size: 30px;
-    line-height: px;
+    font-size: 25px;
+    line-height: 10px;
+}
+
+.all {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding-bottom: 10vh;
+}
+
+.landscapes {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding-bottom: 10vh;
+}
+  
+.children {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding-bottom: 10vh;
+}
+
+.portraits {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding-bottom: 10vh;
+}
+
+.family {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding-bottom: 10vh;
+}
+
+#gallery {
+    display: flex;
+    width: 1612px;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+.image {
+    width: 500px;
+    height: 500px; 
+    object-fit: cover;
+    margin: 15px;
 }
