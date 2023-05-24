@@ -46,17 +46,23 @@
 
     <section id="myworks" class="myworks">
         <div class="container">
-            <h1>My Works</h1>
-            <div class="dropdown">
-                <select>
-                    <option value="all">Всі</option>
-                    <option value="children">Дитячі</option>
-                    <option value="portraits">Портрети</option>
-                    <option value="landscapes">Пейзажі</option>
-                    <option value="family">Сімейні</option>
-                </select>
+            <nav class="menu">
+                <h1>My Works</h1>
+                <div class="dropdown">
+                    <select name="category" id="category">
+                        <option value="all">Усі</option>
+                        <option value="children">Дитячі</option>
+                        <option value="portraits">Портрети</option>
+                        <option value="landscapes">Пейзажі</option>
+                        <option value="family">Сімейні</option>
+                    </select>
+                </div>
+            </nav>
+
+            <div id="gallery">
+                
             </div>
-        </div>
+        </div>    
     </section>
 
     <section id="aboutme" class="aboutme">
@@ -74,7 +80,7 @@
             </h3>
             <h3>
                 <a href="tel:+380973149387">
-                    +380973149234
+                    +380973879239
                 </a>
             </h3>
             <h3>
@@ -112,8 +118,9 @@
 
     <footer id="footer" class="footer">
         <div class="container">
-            <span>Copyright © 2023 | Falkovskyi Taras</span>
+            <span>Copyright © 2023 | Falkovskyi</span>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
