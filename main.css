@@ -1,275 +1,342 @@
-* { /* для всіх елементів сторінки */
-    padding: 0;
-    margin: 0;
-    font-family: 'Montserrat';
-    font-size: 0.833vw;
-    box-sizing: border-box;
-    text-decoration: none;
-    
+* {
+  /* для всіх елементів сторінки */
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat";
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
-.nav { /* редагування розміщення heading */
-    display: flex;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: end;
-    padding-bottom: 6.458vw;
+.nav {
+  /* редагування розміщення heading */
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: end;
+  padding-bottom: 6.458vw;
 }
 
-h1, h2 { /* відсутність відступів у заголовків за замовчуванням */
-    padding: 0;
-    margin: 0;
+h1,
+h2 {
+  /* відсутність відступів у заголовків за замовчуванням */
+  padding: 0px 0px 30px 0px;
+  margin: 0;
+  font-size: 3.385vw;
+  letter-spacing: 0.365vw;
 }
 
-ul, li { /* розташування списків */
-    display: flex;
-    align-items: center;
+a {
+  font-size: 1.302vw;
 }
 
-.container { /* задання початкової ширини контейнера */
-    width: 83.958vw;
-    margin: 0 auto; /* позиціонування по центру */
+ul,
+li {
+  /* розташування списків */
+  display: flex;
+  align-items: center;
+}
+p {
+  font-size: 25px;
 }
 
-.header { /* редагування вигляду header */
-    background: url('../falkovskyi/img/main_ph.jpg') center no-repeat; /* встановлення зображення */
-    background-size: cover; 
-    height: 100vh; 
+section {
+  margin: 50px 0;
 }
 
-.header a { /* встановлення стилю */
-    color: white;
+.container {
+  /* задання початкової ширини контейнера */
+  width: 83vw;
+  margin: 0 auto; /* позиціонування по центру */
 }
 
-.header_title a { /* встановлення стилю для логотипа */
-    font-size: 3.646vw;  
-    letter-spacing: 0.365vw;
+.header {
+  /* редагування вигляду header */
+  background: url("../img/main_ph.jpg") center no-repeat; /* встановлення зображення */
+  background-size: cover;
+  height: 100vh;
 }
 
-.menu { /* редагування вигляду головної панелі */
-    margin-top: 1.823vw;
-    display: flex; /* розташування на одному рівні */
-    justify-content: space-between; /* відстань між */
+.header a {
+  /* встановлення стилю */
+  color: white;
 }
 
-.menu a { /* редагування вигляду тегів */
-    font-size: 1.302vw;
-    letter-spacing: 0.104vw;
+.header_title a {
+  /* встановлення стилю для логотипа */
+  font-size: 3.646vw;
+  letter-spacing: 0.365vw;
 }
 
-.btn { /* програмування кнопки */
-    padding: 0.938vw;
-    border: 0.104vw solid white;
-    font-size: 1.563vw;
-    line-height: px;
+.menu {
+  /* редагування вигляду головної панелі */
+  margin-top: 1.823vw;
+  display: flex; /* розташування на одному рівні */
+  justify-content: space-between; /* відстань між */
 }
 
-.btn:hover { /* зміна вигляду кнопки при наведенні, псевдоклас */
-    background-color: white;
-    color: black;
-    transition: .4s ease;
+.menu a {
+  /* редагування вигляду тегів */
+  letter-spacing: 0.104vw;
 }
 
-.aboutme { /* редагування вигляду блоку */
-    padding-top: 10vh;
-    flex-direction: column;
-    justify-content: end;
-    padding-bottom: 10vh;
+.btn {
+  /* програмування кнопки */
+  padding: 0.938vw;
+  border: 0.104vw solid white;
+  font-size: 1.563vw;
 }
 
-.aboutme h1 { /* редагування вигляду заголовка */
-    font-size: 3.385vw; 
-    letter-spacing: 0.365vw; 
-    line-height: 2em;
+.btn:hover {
+  /* зміна вигляду кнопки при наведенні, псевдоклас */
+  background-color: white;
+  color: black;
+  transition: 0.4s ease;
 }
 
-.aboutme h3 { /* редагування вигляду тексту */
-    font-size: 1.302vw; 
-    text-align: justify;
-    line-height: 2em;
+.aboutme {
+  /* редагування вигляду блоку */
+  padding: 3vw 0;
 }
 
-.contactinfo { /* редагування вигляду блоку */
-    flex-direction: column;
-    justify-content: end;
-    padding-bottom: 10vh;
+.aboutme p {
+  /* редагування вигляду тексту */
+  text-align: justify;
 }
 
-.contactinfo h1 { /* редагування вигляду заголовка */
-    font-size: 3.385vw; 
-    letter-spacing: 0.365vw; 
-    line-height: 2em;
+.contactinfo {
+  /* редагування вигляду блоку */
+  padding-bottom: 3vw;
 }
 
-.contactinfo h3 { /* редагування вигляду тексту */
-    font-size: 1.302vw; 
-    line-height: 2em;
-}
-
-.contactinfo a { /* редагування вигляду тегу */
-    font-size: 1.302vw; 
-    color:black;
+.contactinfo a {
+  /* редагування вигляду тегу */
+  font-size: 32px;
+  color: black;
 }
 
 .contactme {
-    flex-direction: column;
-    justify-content: end;
-    padding-bottom: 10vh;
+  padding-bottom: 3vw;
 }
 
-.contactme h1 {
-    font-size: 3.385vw; 
-    line-height: 2em;
-}
-
-.form-container {
-    max-width: 26.042vw;
-    margin: 1.042vw auto;
-    padding: 1.042vw;
-    border: 0.052vw solid #ccc;
-    border-radius: 0.260vw;
+#contact-form {
+  width: 64vw;
+  margin: 0 auto;
 }
 
 .form-group {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 label {
-    display: block;
-    font-weight: bold;
-    font-size: 1.302vw;
-    margin-bottom: 0.521vw;
+  display: block;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 0.521vw;
 }
 
 input[type="tel"],
 input[type="email"],
 textarea {
-    width: 100%;
-    padding: 0.521vw;
-    font-size: 0.833vw;
-    border-radius: 0.260vw;
-    border: 1px solid #ccc;
+  width: 100%;
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 0.26vw;
+  border: 1px solid #ccc;
 }
 
 button[type="submit"] {
-    padding: 0.521vw 1.042vw;
-    font-size: 1.302vw;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 0.260vw;
-    cursor: pointer;
+  padding: 15px 20px;
+  font-size: 25px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 0.26vw;
+  cursor: pointer;
 }
 
 button[type="submit"]:hover {
-    background-color: rgb(190, 190, 190);
-    color: black;
-    transition: .4s ease;
+  background-color: rgb(190, 190, 190);
+  color: black;
+  transition: 0.4s ease;
 }
 
-.footer { /* створення вигляду footer */
-    background-color: black;
-    height: 9.583vw;
-    width: 100%;
-    text-align: center;
-    color: white;
-    padding-top: 4.167vw;
-}
-
-.myworks h1 {
-    font-size: 3.385vw; 
-    letter-spacing: 0.365vw; 
-    line-height: 2em;
+.footer {
+  /* створення вигляду footer */
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 50px 0;
 }
 
 .dropdown {
-    margin-top: 1.042vw;
-    display: flex;
-    height: 3.646vw; 
+  margin-top: 1.042vw;
+  display: flex;
+  height: 3.646vw;
 }
 
-.dropdown select {
-    padding: 0.521vw;
-    border: 0.104vw solid black;
-    font-size: 1.302vw;
-    line-height: 0.521vw;
-}
-
-.all {
-    display: flex;
-    flex: 1;
-    justify-content: space-between;
-    padding-bottom: 10vh;
-}
-
-.landscapes {
-    display: flex;
-    flex: 1;
-    justify-content: space-between;
-    padding-bottom: 10vh;
-}
-  
-.children {
-    display: flex;
-    flex: 1;
-    justify-content: space-between;
-    padding-bottom: 10vh;
-}
-
-.portraits {
-    display: flex;
-    flex: 1;
-    justify-content: space-between;
-    padding-bottom: 10vh;
-}
-
-.family {
-    display: flex;
-    flex: 1;
-    justify-content: space-between;
-    padding-bottom: 10vh;
+#category {
+  border: 2px solid black;
 }
 
 #gallery {
-    display: flex;
-    width: 83.958vw;
-    margin: 1.042vw 0vw;
-    flex-wrap: wrap;
+  display: flex;
+  margin: 1.042vw 0;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
+
 .image {
-    width: 26.042vw;
-    height: 26.042vw; 
-    object-fit: cover;
-    margin: 0.781vw;
+  object-fit: cover;
+  margin: 10px;
 }
 
 @media screen and (max-width: 1200px) {
-    .container {
-        width: 95vw;
-    }
+  .container {
+    width: 90vw;
+  }
+  .nav {
+    padding-bottom: 11vw;
+  }
+  .header_title a {
+    font-size: 6vw;
+    line-height: 7vw;
+  }
+  .menu {
+    margin-top: 3vw;
+  }
+  .menu a {
+    font-size: 2vw;
+    letter-spacing: 0.1vw;
+  }
+  .btn {
+    padding: 1.1vw;
+    border: 0.2vw solid white;
+    font-size: 1.563vw;
+  }
+  h1,
+  h2 {
+    font-size: 5.4vw;
+  }
+  #contact-form {
+    width: 70vw;
+  }
 }
 
-@media screen and (max-width: 1199px) {
-    .container {
-        width: 80.067vw;
-    }
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+  .container {
+    width: 90vw;
+  }
+  .header_title a {
+    font-size: 7vw;
+    line-height: 8.5vw;
+  }
+  .menu {
+    margin-top: 3vw;
+  }
+  .menu a {
+    font-size: 2.5vw;
+    letter-spacing: 0.1vw;
+  }
+  .btn {
+    padding: 1.1vw;
+    border: 0.2vw solid white;
+    font-size: 2.5vw;
+  }
+  #gallery {
+    justify-content: center;
+  }
+  .image {
+    width: 70vw;
+  }
+  h1,
+  h2 {
+    font-size: 6.5vw;
+  }
+  #contact-form {
+    width: 70vw;
+  }
 }
 
-@media screen and (max-width: 991px) {
-    .container {
-        width: 72.654vw;
-    }
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90vw;
+  }
+  .header_title a {
+    font-size: 8vw;
+    line-height: 8.5vw;
+  }
+  .menu {
+    margin-top: 3vw;
+  }
+  .menu a {
+    font-size: 3.5vw;
+    letter-spacing: 0.1vw;
+  }
+  .btn {
+    padding: 1.1vw;
+    border: 0.2vw solid white;
+    font-size: 3.5vw;
+  }
+  .image {
+    width: 70vw;
+  }
+  h1,
+  h2 {
+    font-size: 8.5vw;
+  }
+  #contact-form {
+    width: 70vw;
+  }
 }
 
-@media screen and (max-width: 767px) {
-    .container {
-        width: 70.404vw;
-    }
-}
-
-@media screen and (max-width: 575px) {
-    .container {
-        width: 100%;
-        padding: 0 2.609vw;
-    }
+/* 0 - 576px */
+@media screen and (max-width: 576px) {
+  .container {
+    width: 90vw;
+  }
+  .header_title a {
+    font-size: 9vw;
+    line-height: 9vw;
+  }
+  .menu {
+    margin-top: 3vw;
+  }
+  .menu a {
+    font-size: 4.5vw;
+    letter-spacing: 0.1vw;
+  }
+  .btn {
+    padding: 1.1vw;
+    border: 0.2vw solid white;
+    font-size: 4.5vw;
+  }
+  .image {
+    width: 70vw;
+  }
+  .menu {
+    display: block;
+  }
+  .myworks .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  #category {
+    height: 40px;
+  }
+  #gallery {
+    margin-top: 50px;
+  }
+  .menu ul {
+    margin-top: 20px;
+  }
+  h1,
+  h2 {
+    font-size: 11vw;
+  }
+  #contact-form {
+    width: 70vw;
+  }
 }
