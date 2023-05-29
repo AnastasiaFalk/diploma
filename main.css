@@ -51,7 +51,7 @@ section {
 
 .header {
   /* редагування вигляду header */
-  background: url("../img/main_ph.jpg") center no-repeat; /* встановлення зображення */
+  background: url("falkovskyi/img/main_ph.jpg") center no-repeat; /* встановлення зображення */
   background-size: cover;
   height: 100vh;
 }
