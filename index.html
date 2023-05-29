@@ -93,37 +93,25 @@
     </section>
 
     <section id="contactme" class="contactme">
-      <div class="container">
-        <h1>Зв'яжіться з нами</h1>
-        <div class="form-container">
-          <form id="contact-form" class="contact-form">
-            <div class="form-group">
-              <label for="phone">Номер телефону:</label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                pattern="[0-9]{10}"
-                required
-              />
+        <div class="container">
+            <h1>Зв'яжіться з нами</h1>
+
+            <div id="contact-form">
+                <div class="form-group">
+                    <label for="phone">Номер телефону:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Емейл:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Повідомлення:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button id="send">Надіслати</button>
             </div>
-            <div class="form-group">
-              <label for="email">Емейл:</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-            <div class="form-group">
-              <label for="message">Повідомлення:</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                required
-              ></textarea>
-            </div>
-            <button type="submit">Надіслати</button>
-          </form>
         </div>
-      </div>
     </section>
 
     <footer id="footer" class="footer">
