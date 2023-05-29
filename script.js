@@ -63,23 +63,35 @@ category.addEventListener('change', () => {
   showImages(images, imageContainer);
 });
 
-$('contact-form').on('submit', function(event) {
+$('.contact-form').on('submit', function (event) {
+
+  event.stopPropagation();
   event.preventDefault();
 
   let form = this,
-    submit = $('.submit', form),
-    data = new FormData(),
-    files = $('input[type=file]')
-
-    $('.submit', form).val('Відправлення..');
-    $('input, textarea', form).attr('disabled', '');
-
-    data.append('phone',   $('[name="phone"]', form).val());
-    data.append('email',   $('[name="email"]', form).val());
-    data.append('message', $('[name="message"]', form).val());
+      submit = $('.submit', form),
+      data = new FormData(),
+      files = $('input[type=file]')
 
 
-    $.ajax({
+  $('.submit', form).val('Отправка...');
+  $('input, textarea', form).attr('disabled','');
+
+  data.append( 'phone',   $('[name="phone"]', form).val() );
+  data.append( 'email', 	$('[name="email"]', form).val() );
+  data.append( 'message',	$('[name="message"]', form).val() );
+ 
+
+  files.each(function (key, file) {
+      let cont = file.files;
+      if ( cont ) {
+          $.each( cont, function( key, value ) {
+              data.append( key, value );
+          });
+      }
+  });
+  
+  $.ajax({
       url: 'ajax.php',
       type: 'POST',
       data: data,
@@ -104,10 +116,10 @@ $('contact-form').on('submit', function(event) {
           return myXhr;
       },
       error: function( jqXHR, textStatus ) {
-          // вивести помилку
+          // Тут выводим ошибку
       },
       complete: function() {
-          // успішна відправка
+          // Тут можем что-то делать ПОСЛЕ успешной отправки формы
           console.log('Complete')
           form.reset() 
       }
