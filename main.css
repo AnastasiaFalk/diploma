@@ -1,342 +1,244 @@
-* {
-  /* для всіх елементів сторінки */
-  padding: 0;
-  margin: 0;
-  font-family: "Montserrat";
-  box-sizing: border-box;
-  text-decoration: none;
+* { /* для всіх елементів сторінки */
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    box-sizing: border-box;
+    text-decoration: none;
+    
 }
 
-.nav {
-  /* редагування розміщення heading */
-  display: flex;
-  height: 100vh;
-  flex-direction: column;
-  justify-content: end;
-  padding-bottom: 6.458vw;
+.nav { /* редагування розміщення heading */
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 124px;
 }
 
-h1,
-h2 {
-  /* відсутність відступів у заголовків за замовчуванням */
-  padding: 0px 0px 30px 0px;
-  margin: 0;
-  font-size: 3.385vw;
-  letter-spacing: 0.365vw;
+h1, h2 { /* відсутність відступів у заголовків за замовчуванням */
+    padding: 0;
+    margin: 0;
 }
 
-a {
-  font-size: 1.302vw;
+ul, li { /* розташування списків */
+    display: flex;
+    align-items: center;
 }
 
-ul,
-li {
-  /* розташування списків */
-  display: flex;
-  align-items: center;
-}
-p {
-  font-size: 25px;
+.container { /* задання початкової ширини контейнера */
+    width: 1612px;
+    margin: 0 auto; /* позиціонування по центру */
 }
 
-section {
-  margin: 50px 0;
+.header { /* редагування вигляду header */
+    background: url('../falkovskyi/img/main_ph.jpg') center no-repeat; /* встановлення зображення */
+    background-size: cover; 
+    height: 100vh; 
 }
 
-.container {
-  /* задання початкової ширини контейнера */
-  width: 83vw;
-  margin: 0 auto; /* позиціонування по центру */
+.header a { /* встановлення стилю */
+    color: white;
 }
 
-.header {
-  /* редагування вигляду header */
-  background: url("falkovskyi/img/main_ph.jpg") center no-repeat; /* встановлення зображення */
-  background-size: cover;
-  height: 100vh;
+.header_title a { /* встановлення стилю для логотипа */
+    font-size: 70px;  
+    letter-spacing: 7px;
 }
 
-.header a {
-  /* встановлення стилю */
-  color: white;
+.menu { /* редагування вигляду головної панелі */
+    margin-top: 35px;
+    display: flex; /* розташування на одному рівні */
+    justify-content: space-between; /* відстань між */
 }
 
-.header_title a {
-  /* встановлення стилю для логотипа */
-  font-size: 3.646vw;
-  letter-spacing: 0.365vw;
+.menu a { /* редагування вигляду тегів */
+    font-size: 25px;
+    letter-spacing: 2px;
 }
 
-.menu {
-  /* редагування вигляду головної панелі */
-  margin-top: 1.823vw;
-  display: flex; /* розташування на одному рівні */
-  justify-content: space-between; /* відстань між */
+.btn { /* програмування кнопки */
+    padding: 18px;
+    border: 2px solid white;
+    font-size: 30px;
+    line-height: px;
 }
 
-.menu a {
-  /* редагування вигляду тегів */
-  letter-spacing: 0.104vw;
+.btn:hover { /* зміна вигляду кнопки при наведенні, псевдоклас */
+    background-color: white;
+    color: black;
+    transition: .4s ease;
 }
 
-.btn {
-  /* програмування кнопки */
-  padding: 0.938vw;
-  border: 0.104vw solid white;
-  font-size: 1.563vw;
+.aboutme { /* редагування вигляду блоку */
+    padding-top: 10vh;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 10vh;
 }
 
-.btn:hover {
-  /* зміна вигляду кнопки при наведенні, псевдоклас */
-  background-color: white;
-  color: black;
-  transition: 0.4s ease;
+.aboutme h1 { /* редагування вигляду заголовка */
+    font-size: 65px; 
+    letter-spacing: 7px; 
+    line-height: 2em;
 }
 
-.aboutme {
-  /* редагування вигляду блоку */
-  padding: 3vw 0;
+.aboutme h3 { /* редагування вигляду тексту */
+    font-size: 25px; 
+    text-align: justify;
+    line-height: 2em;
 }
 
-.aboutme p {
-  /* редагування вигляду тексту */
-  text-align: justify;
+.contactinfo { /* редагування вигляду блоку */
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 10vh;
 }
 
-.contactinfo {
-  /* редагування вигляду блоку */
-  padding-bottom: 3vw;
+.contactinfo h1 { /* редагування вигляду заголовка */
+    font-size: 65px; 
+    letter-spacing: 7px; 
+    line-height: 2em;
 }
 
-.contactinfo a {
-  /* редагування вигляду тегу */
-  font-size: 32px;
-  color: black;
+.contactinfo h3 { /* редагування вигляду тексту */
+    font-size: 25px; 
+    line-height: 2em;
+}
+
+.contactinfo a { /* редагування вигляду тегу */
+    font-size: 25px; 
+    color:black;
 }
 
 .contactme {
-  padding-bottom: 3vw;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 10vh;
 }
 
-#contact-form {
-  width: 64vw;
-  margin: 0 auto;
+.contactme h1 {
+    font-size: 65px; 
+    line-height: 2em;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .form-group {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 label {
-  display: block;
-  font-weight: bold;
-  font-size: 25px;
-  margin-bottom: 0.521vw;
+    display: block;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
 }
 
 input[type="tel"],
 input[type="email"],
 textarea {
-  width: 100%;
-  padding: 10px;
-  font-size: 25px;
-  border-radius: 0.26vw;
-  border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 button[type="submit"] {
-  padding: 15px 20px;
-  font-size: 25px;
-  background-color: black;
-  color: white;
-  border: none;
-  border-radius: 0.26vw;
-  cursor: pointer;
+    padding: 10px 20px;
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 button[type="submit"]:hover {
-  background-color: rgb(190, 190, 190);
-  color: black;
-  transition: 0.4s ease;
+    background-color: rgb(190, 190, 190);
+    color: black;
+    transition: .4s ease;
 }
 
-.footer {
-  /* створення вигляду footer */
-  background-color: black;
-  width: 100%;
-  text-align: center;
-  color: white;
-  padding: 50px 0;
+.footer { /* створення вигляду footer */
+    background-color: black;
+    height: 184px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding-top: 80px;
+}
+
+.myworks h1 {
+    font-size: 65px; 
+    letter-spacing: 7px; 
+    line-height: 2em;
 }
 
 .dropdown {
-  margin-top: 1.042vw;
-  display: flex;
-  height: 3.646vw;
+    margin-top: 20px;
+    display: flex;
+    height: 70px; 
 }
 
-#category {
-  border: 2px solid black;
+.dropdown select {
+    padding: 10px;
+    border: 2px solid black;
+    font-size: 25px;
+    line-height: 10px;
+}
+
+.all {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding-bottom: 10vh;
+}
+
+.landscapes {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding-bottom: 10vh;
+}
+  
+.children {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding-bottom: 10vh;
+}
+
+.portraits {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding-bottom: 10vh;
+}
+
+.family {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding-bottom: 10vh;
 }
 
 #gallery {
-  display: flex;
-  margin: 1.042vw 0;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.image {
-  object-fit: cover;
-  margin: 10px;
-}
-
-@media screen and (max-width: 1200px) {
-  .container {
-    width: 90vw;
-  }
-  .nav {
-    padding-bottom: 11vw;
-  }
-  .header_title a {
-    font-size: 6vw;
-    line-height: 7vw;
-  }
-  .menu {
-    margin-top: 3vw;
-  }
-  .menu a {
-    font-size: 2vw;
-    letter-spacing: 0.1vw;
-  }
-  .btn {
-    padding: 1.1vw;
-    border: 0.2vw solid white;
-    font-size: 1.563vw;
-  }
-  h1,
-  h2 {
-    font-size: 5.4vw;
-  }
-  #contact-form {
-    width: 70vw;
-  }
-}
-
-/* 768px - 992px */
-@media screen and (max-width: 992px) {
-  .container {
-    width: 90vw;
-  }
-  .header_title a {
-    font-size: 7vw;
-    line-height: 8.5vw;
-  }
-  .menu {
-    margin-top: 3vw;
-  }
-  .menu a {
-    font-size: 2.5vw;
-    letter-spacing: 0.1vw;
-  }
-  .btn {
-    padding: 1.1vw;
-    border: 0.2vw solid white;
-    font-size: 2.5vw;
-  }
-  #gallery {
-    justify-content: center;
-  }
-  .image {
-    width: 70vw;
-  }
-  h1,
-  h2 {
-    font-size: 6.5vw;
-  }
-  #contact-form {
-    width: 70vw;
-  }
-}
-
-/* 576px - 768px */
-@media screen and (max-width: 768px) {
-  .container {
-    width: 90vw;
-  }
-  .header_title a {
-    font-size: 8vw;
-    line-height: 8.5vw;
-  }
-  .menu {
-    margin-top: 3vw;
-  }
-  .menu a {
-    font-size: 3.5vw;
-    letter-spacing: 0.1vw;
-  }
-  .btn {
-    padding: 1.1vw;
-    border: 0.2vw solid white;
-    font-size: 3.5vw;
-  }
-  .image {
-    width: 70vw;
-  }
-  h1,
-  h2 {
-    font-size: 8.5vw;
-  }
-  #contact-form {
-    width: 70vw;
-  }
-}
-
-/* 0 - 576px */
-@media screen and (max-width: 576px) {
-  .container {
-    width: 90vw;
-  }
-  .header_title a {
-    font-size: 9vw;
-    line-height: 9vw;
-  }
-  .menu {
-    margin-top: 3vw;
-  }
-  .menu a {
-    font-size: 4.5vw;
-    letter-spacing: 0.1vw;
-  }
-  .btn {
-    padding: 1.1vw;
-    border: 0.2vw solid white;
-    font-size: 4.5vw;
-  }
-  .image {
-    width: 70vw;
-  }
-  .menu {
-    display: block;
-  }
-  .myworks .menu {
     display: flex;
-    flex-direction: column;
-  }
-  #category {
-    height: 40px;
-  }
-  #gallery {
-    margin-top: 50px;
-  }
-  .menu ul {
-    margin-top: 20px;
-  }
-  h1,
-  h2 {
-    font-size: 11vw;
-  }
-  #contact-form {
-    width: 70vw;
-  }
+    width: 1612px;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+.image {
+    width: 500px;
+    height: 500px; 
+    object-fit: cover;
+    margin: 15px;
 }
