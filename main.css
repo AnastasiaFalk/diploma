@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Montserrat';
-    font-size: 16px;
+    font-size: 0.833vw;
     box-sizing: border-box;
     text-decoration: none;
     
@@ -13,7 +13,7 @@
     height: 100vh;
     flex-direction: column;
     justify-content: end;
-    padding-bottom: 124px;
+    padding-bottom: 6.458vw;
 }
 
 h1, h2 { /* відсутність відступів у заголовків за замовчуванням */
@@ -27,7 +27,7 @@ ul, li { /* розташування списків */
 }
 
 .container { /* задання початкової ширини контейнера */
-    width: 1612px;
+    width: 83.958vw;
     margin: 0 auto; /* позиціонування по центру */
 }
 
@@ -42,25 +42,25 @@ ul, li { /* розташування списків */
 }
 
 .header_title a { /* встановлення стилю для логотипа */
-    font-size: 70px;  
-    letter-spacing: 7px;
+    font-size: 3.646vw;  
+    letter-spacing: 0.365vw;
 }
 
 .menu { /* редагування вигляду головної панелі */
-    margin-top: 35px;
+    margin-top: 1.823vw;
     display: flex; /* розташування на одному рівні */
     justify-content: space-between; /* відстань між */
 }
 
 .menu a { /* редагування вигляду тегів */
-    font-size: 25px;
-    letter-spacing: 2px;
+    font-size: 1.302vw;
+    letter-spacing: 0.104vw;
 }
 
 .btn { /* програмування кнопки */
-    padding: 18px;
-    border: 2px solid white;
-    font-size: 30px;
+    padding: 0.938vw;
+    border: 0.104vw solid white;
+    font-size: 1.563vw;
     line-height: px;
 }
 
@@ -78,13 +78,13 @@ ul, li { /* розташування списків */
 }
 
 .aboutme h1 { /* редагування вигляду заголовка */
-    font-size: 65px; 
-    letter-spacing: 7px; 
+    font-size: 3.385vw; 
+    letter-spacing: 0.365vw; 
     line-height: 2em;
 }
 
 .aboutme h3 { /* редагування вигляду тексту */
-    font-size: 25px; 
+    font-size: 1.302vw; 
     text-align: justify;
     line-height: 2em;
 }
@@ -96,18 +96,18 @@ ul, li { /* розташування списків */
 }
 
 .contactinfo h1 { /* редагування вигляду заголовка */
-    font-size: 65px; 
-    letter-spacing: 7px; 
+    font-size: 3.385vw; 
+    letter-spacing: 0.365vw; 
     line-height: 2em;
 }
 
 .contactinfo h3 { /* редагування вигляду тексту */
-    font-size: 25px; 
+    font-size: 1.302vw; 
     line-height: 2em;
 }
 
 .contactinfo a { /* редагування вигляду тегу */
-    font-size: 25px; 
+    font-size: 1.302vw; 
     color:black;
 }
 
@@ -118,16 +118,16 @@ ul, li { /* розташування списків */
 }
 
 .contactme h1 {
-    font-size: 65px; 
+    font-size: 3.385vw; 
     line-height: 2em;
 }
 
 .form-container {
-    max-width: 500px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    max-width: 26.042vw;
+    margin: 1.042vw auto;
+    padding: 1.042vw;
+    border: 0.052vw solid #ccc;
+    border-radius: 0.260vw;
 }
 
 .form-group {
@@ -137,27 +137,27 @@ ul, li { /* розташування списків */
 label {
     display: block;
     font-weight: bold;
-    font-size: 25px;
-    margin-bottom: 10px;
+    font-size: 1.302vw;
+    margin-bottom: 0.521vw;
 }
 
 input[type="tel"],
 input[type="email"],
 textarea {
     width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
+    padding: 0.521vw;
+    font-size: 0.833vw;
+    border-radius: 0.260vw;
     border: 1px solid #ccc;
 }
 
 button[type="submit"] {
-    padding: 10px 20px;
-    font-size: 25px;
+    padding: 0.521vw 1.042vw;
+    font-size: 1.302vw;
     background-color: black;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.260vw;
     cursor: pointer;
 }
 
@@ -169,30 +169,30 @@ button[type="submit"]:hover {
 
 .footer { /* створення вигляду footer */
     background-color: black;
-    height: 184px;
+    height: 9.583vw;
     width: 100%;
     text-align: center;
     color: white;
-    padding-top: 80px;
+    padding-top: 4.167vw;
 }
 
 .myworks h1 {
-    font-size: 65px; 
-    letter-spacing: 7px; 
+    font-size: 3.385vw; 
+    letter-spacing: 0.365vw; 
     line-height: 2em;
 }
 
 .dropdown {
-    margin-top: 20px;
+    margin-top: 1.042vw;
     display: flex;
-    height: 70px; 
+    height: 3.646vw; 
 }
 
 .dropdown select {
-    padding: 10px;
-    border: 2px solid black;
-    font-size: 25px;
-    line-height: 10px;
+    padding: 0.521vw;
+    border: 0.104vw solid black;
+    font-size: 1.302vw;
+    line-height: 0.521vw;
 }
 
 .all {
@@ -232,13 +232,44 @@ button[type="submit"]:hover {
 
 #gallery {
     display: flex;
-    width: 1612px;
-    margin: 20px 0px;
+    width: 83.958vw;
+    margin: 1.042vw 0vw;
     flex-wrap: wrap;
 }
 .image {
-    width: 500px;
-    height: 500px; 
+    width: 26.042vw;
+    height: 26.042vw; 
     object-fit: cover;
-    margin: 15px;
+    margin: 0.781vw;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 95vw;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .container {
+        width: 80.067vw;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .container {
+        width: 72.654vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        width: 70.404vw;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .container {
+        width: 100%;
+        padding: 0 2.609vw;
+    }
 }
