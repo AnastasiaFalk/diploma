@@ -249,102 +249,80 @@ button[type="send"]:hover {
     margin: 15px;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
+    .container {
+        width: 80%;
+    }
     .header_title a {
-      font-size: 6vw;
-      letter-spacing: 0.6vw;
+        font-size: 30px;
+        letter-spacing: 4px;
     }
-  
     .menu a {
-      font-size: 4vw;
-      letter-spacing: 0.32vw;
+        font-size: 14px;
+        letter-spacing: 1px;
     }
-  
-    .btn {
-      padding: 3.74vw;
-      font-size: 6vw;
-    }
-  
     .aboutme h1 {
-      font-size: 6vw;
-      letter-spacing: 0.6vw;
-      line-height: 1.5em;
+        font-size: 30px;
+        letter-spacing: 4px;
+        line-height: 1.8em;
     }
-  
-    .aboutme h3 {
-      font-size: 4vw;
-      line-height: 1.5em;
+    .aboutme p {
+        font-size: 14px;
+        line-height: 1.8em;
     }
-  
     .contactinfo h1 {
-      font-size: 6vw;
-      letter-spacing: 0.6vw;
-      line-height: 1.5em;
+        font-size: 30px;
+        letter-spacing: 4px;
+        line-height: 1.8em;
     }
-  
-    .contactinfo h3 {
-      font-size: 4vw;
-      line-height: 1.5em;
+    .contactinfo p {
+        font-size: 14px;
+        line-height: 1.8em;
     }
-  
     .contactinfo a {
-      font-size: 4vw;
-      color: black;
+        font-size: 14px;
     }
-  
     .contactme h1 {
-      font-size: 6vw;
-      line-height: 1.5em;
+        font-size: 30px;
+        line-height: 1.8em;
     }
-  
-    .form-container {
-      max-width: 80vw;
-      margin: 4vw auto;
-      padding: 4vw;
-      border-radius: 2vw;
+    .form-group label {
+        font-size: 14px;
     }
-  
-    label {
-      font-size: 4vw;
-      margin-bottom: 2vw;
-    }
-  
     input[type="tel"],
     input[type="email"],
     textarea {
-      padding: 2vw;
-      font-size: 3.2vw;
-      border-radius: 1vw;
-      border: 0.1vw solid #ccc;
+        font-size: 14px;
     }
-  
     button[type="send"] {
-      padding: 2vw 4vw;
-      font-size: 4vw;
-      border-radius: 1vw;
+        padding: 4px 10px;
+        font-size: 14px;
     }
-  
+    #send {
+        padding: 10px;
+        font-size: 18px;
+    }
     .footer {
-      height: 15vw;
-      padding-top: 6.25vw;
+        height: 104px;
+        padding-top: 40px;
     }
-  
     .myworks h1 {
-      font-size: 6vw;
-      letter-spacing: 0.6vw;
-      line-height: 1.5em;
+        font-size: 40px;
+        letter-spacing: 4px;
+        line-height: 1.8em;
     }
-  
     .dropdown select {
-      padding: 2vw;
-      border: 0.4vw solid black;
-      font-size: 4vw;
-      line-height: 2vw;
+        padding: 6px;
+        font-size: 18px;
+        line-height: 6px;
     }
-  
     .image {
-      width: 80vw;
-      height: 80vw;
-      margin: 2vw;
+        width: 300px;
+        height: 300px;
+        margin: 8px;
     }
-  }
+    #gallery {
+        display: flex;
+        flex-direction: column;
+    }
+}
