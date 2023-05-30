@@ -71,7 +71,11 @@ buttonSubmit.addEventListener('click', () => {
   const phone = document.getElementById('phone').value;
   const message = document.getElementById('message').value;
 
-
+  if (email.trim() === '' || phone.trim() === '' || message.trim() === '') {
+    alert('Будь ласка, заповніть усі поля');
+    return; 
+  }
+  
   const token = "6046445208:AAF7SZ1pmkKYRgGHAGzbdfhHmfSC7bpes5g";
   const chatId = '-1001910885603';
 
