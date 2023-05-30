@@ -249,7 +249,7 @@ button[type="send"]:hover {
     margin: 15px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) { 
     .container {
         width: 80%;
     }
@@ -324,5 +324,153 @@ button[type="send"]:hover {
     #gallery {
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+    .header_title a {
+        font-size: 80px;
+        letter-spacing: 8px;
+    }
+    .menu a {
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
+    .aboutme h1 {
+        font-size: 80px;
+        letter-spacing: 8px;
+        line-height: 2.2em;
+    }
+    .aboutme p {
+        font-size: 30px;
+        line-height: 2.2em;
+    }
+    .contactinfo h1 {
+        font-size: 80px;
+        letter-spacing: 8px;
+        line-height: 2.2em;
+    }
+    .contactinfo p {
+        font-size: 30px;
+        line-height: 2.2em;
+    }
+    .contactinfo a {
+        font-size: 30px;
+    }
+    .contactme h1 {
+        font-size: 80px;
+        line-height: 2.2em;
+    }
+    .form-group label {
+        font-size: 30px;
+    }
+    input[type="tel"],
+    input[type="email"],
+    textarea {
+        font-size: 20px;
+    }
+    button[type="send"] {
+        padding: 12px 24px;
+        font-size: 30px;
+    }
+    #send {
+        padding: 20px;
+        font-size: 35px;
+    }
+    .footer {
+        height: 224px;
+        padding-top: 100px;
+    }
+    .myworks h1 {
+        font-size: 80px;
+        letter-spacing: 8px;
+        line-height: 2.2em;
+    }
+    .dropdown select {
+        padding: 12px;
+        font-size: 30px;
+        line-height: 12px;
+    }
+    .image {
+        width: 600px;
+        height: 600px;
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    .header_title a {
+        font-size: 60px;
+        letter-spacing: 6px;
+    }
+    .menu a {
+        font-size: 22px;
+        letter-spacing: 2px;
+    }
+    .aboutme h1 {
+        font-size: 60px;
+        letter-spacing: 6px;
+        line-height: 2em;
+    }
+    .aboutme p {
+        font-size: 22px;
+        line-height: 2em;
+    }
+    .contactinfo h1 {
+        font-size: 60px;
+        letter-spacing: 6px;
+        line-height: 2em;
+    }
+    .contactinfo p {
+        font-size: 22px;
+        line-height: 2em;
+    }
+    .contactinfo a {
+        font-size: 22px;
+    }
+    .contactme h1 {
+        font-size: 60px;
+        line-height: 2em;
+    }
+    .form-group label {
+        font-size: 22px;
+    }
+    input[type="tel"],
+    input[type="email"],
+    textarea {
+    font-size: 16px;
+    }
+    button[type="send"] {
+        padding: 8px 16px;
+        font-size: 22px;
+    }
+    #send {
+        padding: 14px;
+        font-size: 25px;
+    }
+    .footer {
+        height: 144px;
+        padding-top: 60px;
+    }
+    .myworks h1 {
+        font-size: 60px;
+        letter-spacing: 6px;
+        line-height: 2em;
+    }
+    .dropdown select {
+        padding: 8px;
+        font-size: 22px;
+        line-height: 8px;
+    }
+    .image {
+        width: 400px;
+        height: 400px;
+        margin: 10px;
     }
 }
