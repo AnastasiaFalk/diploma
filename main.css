@@ -399,6 +399,10 @@ button[type="send"]:hover {
         height: 600px;
         margin: 20px;
     }
+    #gallery {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 1199px) and (min-width: 768px) {
@@ -472,5 +476,9 @@ button[type="send"]:hover {
         width: 400px;
         height: 400px;
         margin: 10px;
+    }
+    #gallery {
+        display: flex;
+        flex-direction: column;
     }
 }
