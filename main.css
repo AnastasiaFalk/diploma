@@ -41,7 +41,7 @@ ul, li { /* розташування списків */
 }
 
 .header { /* редагування вигляду header */
-    background: url('../falkovskyi/img/main_ph.jpg') center no-repeat; /* встановлення зображення */
+    background: url('../diploma/img/main_ph.jpg') center no-repeat; /* встановлення зображення */
     background-size: cover; 
     height: 100vh; 
 }
